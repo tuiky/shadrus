@@ -26,6 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    'C:/Users/damir/.virtualenvs/django1.6.1/Scripts/shadrus/templates',
+)
 
 # Application definition
 
