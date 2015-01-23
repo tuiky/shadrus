@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block article %}
+<h1> eto ARTICLE!!!! </h1>
+<p>ID of article = {{article.id}}</p>
+<h4>дата публикации: {{article.article_date}}</h4>
+<h2>{{article.article_title}}</h2>
+<p>{{article.article_text}}</p>
+<p>Понравилось: <a>{{article.article_likes}}</a></p>
+<hr>
+<h3>Комментарии</h3>
+{%	for comment in comments %}
+	<p>id {{comment.id}} comments_article_id {{comment.comments_article_id}}</p>
+	<p>comment_text -> {{comment.comments_text}}</p>
+{%	endfor %}
+
+{% endblock %}

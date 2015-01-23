@@ -1,3 +1,4 @@
+# coding: utf-8
 from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
@@ -9,6 +10,9 @@ urlpatterns = patterns('',
     url(r'^2/', 'article.views.template_two'),
     url(r'^3/', 'article.views.template_three_simple'),
     url(r'^articles/all/$', 'article.views.articles'),
-    url(r'^articles/get/(?P<article_id>\d+)/$', 'article.views.article'),
+    url(r'^articles/get/(?P<article_id>[0-9]+)/$', 'article.views.article'),
+	url(r'^', 'article.views.articles'),
+	#(?P<имя_переменной, передаваемой в функцию>[здесь передаваемое значение - рекурсивное выражение, соответствующее значению.])    
 
 )
+

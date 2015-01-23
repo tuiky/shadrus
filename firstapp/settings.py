@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 
 TEMPLATE_DIRS = (
     'D:/py workspace/django1.6.1/Scripts/shadrus/templates',
+    'D:/py workspace/django1.6.1/Scripts/shadrus/article/templates'
 )
 
 # Application definition

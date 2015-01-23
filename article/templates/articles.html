@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block article %}
+<h1> eto ARTICLESSSSSSSSS!!!! </h1>
+{%	for article in articles %}
+	<h6>Дата публикации: {{ article.article_date}}</h6>
+	<a href="/articles/get/{{article.id}}/"><h4>{{ article.article_title}}</h4></a>
+	<p>{{ article.article_text}}</p>
+	<p>Понравилось: <a>{{ article.article_likes}}</a></p>
+	<hr>
+{%	endfor %}
+
+{% endblock %}
+
